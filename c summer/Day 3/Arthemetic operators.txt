@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int x ,y , c;
+    printf("enter the value of a :- ");
+    scanf("%d", &x);
+    printf("enter the value of b :- ");
+    scanf("%d", &y);
+    
+    c = x+y;
+    printf("x+y = %d \n",c);
+    c = x-y;
+    printf("x-y = %d \n",c);
+    c = x*y;
+    printf("x*y = %d \n",c);
+    c = x/y;
+    printf("x/y = %d \n",c);
+    c = x%y;
+    printf("Remainder = %d \n",c);
+    
+    return 0;
+}

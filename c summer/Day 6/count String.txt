@@ -1,0 +1,42 @@
+
+#include <stdio.h>
+#define MAX_SIZE 100
+
+
+int main()
+{
+    char str[MAX_SIZE];
+    int alp, dig, others, i;
+
+    alp = 0;
+    dig = 0;
+    others = 0;
+    i = 0;
+
+    printf("Enter string : ");
+    gets(str);
+
+    while(str[i]!='\0')
+    {
+        if((str[i]>='a' && str[i]<='z') || (str[i]>='A' && str[i]<='Z'))
+        {
+            alp++;
+        }
+        else if(str[i]>='0' && str[i]<='9')
+        {
+            dig++;
+        }
+        else
+        {
+            others++;
+        }
+
+        i++;
+    }
+
+    printf("Alphabets = %d\n", alp);
+    printf("Digits = %d\n", dig);
+    printf("Special characters = %d", others);
+
+    return 0;
+}

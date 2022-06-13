@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int basic,extra,total;
+    
+    printf("enter basic salary :-");
+    scanf("%d", &basic);
+    
+    printf("enter extra:-");
+    scanf("%d", &extra);
+    
+    total=basic+extra;
+    printf("gross salary total= %d", total);
+    
+}

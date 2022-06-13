@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() 
+{
+	int o = 1;
+    void* address = (void *)&o;
+    printf("%p\n", address);
+	return 0;
+}

@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+
+int x ;
+printf("enter the values integer x :- ");
+scanf("%d",&x);
+switch (x) {
+ case 1: printf("One\n");
+        
+ case 2: printf("Two\n");
+         
+ case 3: printf("Three\n");
+         
+ case 4: printf("Four\n");
+
+  }
+  return 0;
+}

@@ -1,0 +1,39 @@
+#include <stdio.h>
+ 
+int main()
+{
+  float amount;
+  float rupee, dollar;
+  int choice;
+ 
+  printf("choose:");
+  printf("\n 1: Ruppe");
+  printf("\n 2: Dollar");
+ 
+  printf("\n choice: ");
+  scanf("%d", &choice);
+ 
+  printf("Enter the amount you want to convert?\n");
+  scanf("%f", &amount);
+ 
+  switch (choice)
+  {
+    case 1:
+        dollar = amount / 70;
+        printf("%.2f Rupee =  %.2f dollar", amount, dollar);
+ 
+        break;
+ 
+    case 2:
+        rupee = amount * 70;
+        printf("\n%.2f Dollar =  %.2f rupee", amount, rupee);
+ 
+        break;
+
+        
+    default:
+        printf("\nInvalid Input");
+  }
+ 
+  return 0;
+}
